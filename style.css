@@ -1,0 +1,261 @@
+/* Removes the browser's default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main website */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f7f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navigation */
+header {
+    background-color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eeeeee;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #8b5e83;
+}
+
+/* Main sections */
+main section {
+    padding: 70px 10%;
+    text-align: center;
+}
+
+main section:first-child {
+    min-height: 650px;
+
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+        url("Images/hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+}
+
+main section:first-child h2 {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+main section:first-child p {
+    font-size: 20px;
+    max-width: 650px;
+    margin-bottom: 25px;
+}
+
+/* All buttons */
+button {
+    background-color: #8b5e83;
+    color: white;
+    border: none;
+    padding: 14px 25px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #684461;
+}
+
+/* Section headings */
+section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+/* Destination cards */
+/* Popular Destinations */
+
+.destinations {
+    padding: 80px 8%;
+    background-color: #f9f7f4;
+}
+
+.destinations h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+
+/* Holds all three cards */
+
+.destination-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+/* Individual card */
+
+.destination-card {
+    background-color: white;
+    width: 32%;
+    border-radius: 18px;
+    overflow: hidden;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.10);
+
+    transition: transform 0.3s ease;
+}
+
+
+/* Card moves slightly when mouse is over it */
+
+.destination-card:hover {
+    transform: translateY(-8px);
+}
+
+
+/* Destination image */
+
+.destination-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* Text inside card */
+
+.destination-info {
+    padding: 25px;
+}
+
+.destination-info h3 {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.destination-info p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+
+/* Phone layout */
+
+@media (max-width: 800px) {
+
+    .destination-container {
+        flex-direction: column;
+    }
+
+    .destination-card {
+        width: 100%;
+    }
+}
+
+/* Why Lotus section */
+main section:nth-child(3) {
+    background-color: #ffffff;
+}
+
+main section:nth-child(3) div {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    padding: 25px;
+}
+
+main section:nth-child(3) h3 {
+    margin-bottom: 10px;
+}
+
+/* Newsletter */
+main section:nth-child(4) {
+    background-color: #eee7f0;
+}
+
+input {
+    padding: 14px 20px;
+    width: 280px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #292329;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+footer h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+/* Makes the website work better on phones */
+@media (max-width: 800px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    main section:first-child h2 {
+        font-size: 38px;
+    }
+
+    main section:nth-child(2) div,
+    main section:nth-child(3) div {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    input {
+        width: 100%;
+    }
+}
