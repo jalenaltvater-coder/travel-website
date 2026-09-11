@@ -4,7 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 /* Main website */
 body {
     font-family: Arial, sans-serif;
@@ -93,7 +95,23 @@ button {
 button:hover {
     background-color: #684461;
 }
+/* Explore Destinations button */
+.hero-button {
+    display: inline-block;
+    background-color: #8b5e83;
+    color: white;
+    text-decoration: none;
+    padding: 14px 25px;
+    border-radius: 25px;
+    font-size: 16px;
+    margin-top: 15px;
+    transition: 0.3s;
+}
 
+.hero-button:hover {
+    background-color: #684461;
+    transform: translateY(-2px);
+}
 /* Section headings */
 section h2 {
     font-size: 36px;
@@ -258,4 +276,284 @@ footer p {
     input {
         width: 100%;
     }
+}
+/* Featured Trips */
+
+.trips {
+    padding: 80px 8%;
+    text-align: center;
+    background-color: white;
+}
+
+.trips-intro {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.trip-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.trip-card {
+    background-color: #f9f7f4;
+    width: 300px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.trip-card h3 {
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.trip-card p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.trip-card h4 {
+    font-size: 21px;
+    margin-bottom: 25px;
+}
+
+.trip-button {
+    display: inline-block;
+    background-color: #8b5e83;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.trip-button:hover {
+    background-color: #684461;
+}
+/* =================================
+   ITALY TRIP PAGE
+================================= */
+
+.trip-hero {
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.italy-hero {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+        url("images/italy.jpg");
+}
+
+.trip-hero-content h1 {
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+.trip-hero-content p {
+    font-size: 22px;
+}
+
+.trip-hero-content h2 {
+    font-size: 28px;
+    margin-top: 15px;
+}
+
+.trip-details {
+    padding: 70px 10%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.trip-details > h2 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.trip-description {
+    max-width: 800px;
+    margin: 20px auto 50px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.trip-info-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-bottom: 70px;
+}
+
+.trip-info-box {
+    background-color: #f9f7f4;
+    padding: 25px;
+    border-radius: 15px;
+    width: 250px;
+    text-align: center;
+}
+
+.trip-section {
+    margin: 60px 0;
+}
+
+.trip-section h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.trip-section li {
+    margin-bottom: 12px;
+    font-size: 17px;
+}
+
+.itinerary-day {
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.itinerary-day h3 {
+    margin-bottom: 8px;
+}
+
+.booking-box {
+    background-color: #f9f7f4;
+    text-align: center;
+    padding: 50px;
+    border-radius: 20px;
+    margin-top: 60px;
+}
+
+.booking-box h3 {
+    font-size: 25px;
+    margin: 15px 0 30px;
+}
+.spain-hero {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+        url("images/spain.jpg");
+}
+.greece-hero {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+        url("images/greece.jpg");
+}
+/* =================================
+   CONTACT SECTION
+================================= */
+
+.contact {
+    padding: 80px 8%;
+    background-color: #f9f7f4;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.contact-intro {
+    max-width: 650px;
+    margin: 0 auto 40px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.contact-form {
+    max-width: 650px;
+    margin: auto;
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: left;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #8b5e83;
+}
+
+.contact-button {
+    width: 100%;
+    background-color: #8b5e83;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 25px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.contact-button:hover {
+    background-color: #684461;
+}
+/* =================================
+   ABOUT US
+================================= */
+
+.about {
+    padding: 90px 8%;
+    background-color: white;
+    text-align: center;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.about h2 {
+    font-size: 38px;
+    margin-bottom: 25px;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.about .trip-button {
+    margin-top: 15px;
 }
